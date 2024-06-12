@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+  <!-- Here is our main header that is used across all the pages of our website -->
+
+  <header>
+
+    <div class="header">
+      <img src="logo.png" alt="logo" class="responsive">
+      <div class="header-right">
+        <a class="hov" href="main page.html" data-replace="home"><span>home</span></a>
+        <a class="hov" href="about.html" data-replace="about me"><span>about me</span></a>
+
+
+
+
+        <div class="container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="port.html">Illustrations</a>
+            <a href="pack.html">Packaging Designs</a>
+            <a href="poster.html">Posters</a>
+            <a href="#">Logos</a>
+          </div>
+        </div>
+        <a class="hov" href="#" data-replace="portfolio" onclick="openNav()"><span>portfolio</span></a>
+        <a class="hov" href="#" data-replace="contact"><span>contact</span></a>
+      </div>
+    </div>
+  </header>
+  <hr>
+
+
+
+
+
+  <main>
+
+
+    <a href="#"><i class="fa fa-instagram"></i></a>
+   <a href="#"><i class="fa fa-facebook"></i></a>
+   <a href="#"><i class="fa fa-linkedin"></i></a>
+  
+
+</main>
+ 
+    <div class="form">
+  
+      <div class="pageTitle title">Contact Me </div>
+      <div class="secondaryTitle title">Lets get in touch. Send me a message:</div>
+      <input type="text" class="name formEntry" placeholder="Name" />
+      <input type="text" class="email formEntry" placeholder="Email"/>
+      <textarea class="message formEntry" placeholder="Message"></textarea>
+      
+     
+      <button class="submit formEntry" onclick="thanks()">Send</button>
+   
+    </div>
+
+
+
+
+<footer>
+ 
+      <p><i class="fa fa-map-marker fa-1x"></i> Bucharest, Ro</p>
+      <p><i class="fa fa-phone fa-2xs"></i> +40 748 767 107</p>
+      <p><i class="fa fa-envelope fa-2xs"> </i> Email: alexiacraineanu10@gmail.com</p>
+  </footer>
+  <script>
+    //menu
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+  
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+</body>
+</html>

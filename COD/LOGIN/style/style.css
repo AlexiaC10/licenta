@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'arsenica_trialmedium';
+    src: url('font/arse/arsenicatrial-medium-webfont.woff2') format('woff2'),
+      url('font/arse/arsenicatrial-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'louis_george_cafebold';
+    src: url('font/lou/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+      url('font/lou/louis_george_cafe_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* sau orice lățime dorită */
+    background-color: #fdfdfd;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px; /* Ajustează dimensiunea la cea a containerului de logare */
+    background-color: #fdfdfd; /* Folosește aceeași culoare ca și meniul de logare */
+    padding-top: 25px; /* Ajustează începutul padding-ului pentru a ține cont de bara de meniu de sus */
+    padding-left: 25px; /* Ajustează padding-ul pentru a păstra spațiul stânga-dreapta */
+    padding-right: 25px; /* Ajustează padding-ul pentru a păstra spațiul stânga-dreapta */
+    padding-bottom: 25px; /* Ajustează padding-ul pentru a păstra spațiul jos */
+    border-radius: 20px; /* Ajustează raza de colț așa cum este în meniul de logare */
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5); /* Ajustează umbra așa cum este în meniul de logare */
+}
+.form-box{
+    margin: 0 auto;
+}
+
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.btn{
+    height: 35px;
+    background: rgba(76,68,182,0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.btn:hover{
+    opacity: 0.82;
+}
+.submit{
+    width: 100%;
+}
+.links{
+    margin-bottom: 15px;
+}
+
+/********* Home *****************/
+
+
+
+.right-links a{
+    padding: 0 10px;
+}
+
+
+.bottom{
+    width: 100%;
+    margin-top: 200px;
+}
+
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border:1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+  

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="port.css">
+</head>
+
+<body>
+  <!-- Here is our main header that is used across all the pages of our website -->
+
+  
+  <header>
+  
+    <div class="header">
+      <img src="logo.png" alt="logo" class="responsive" >
+      <div class="header-right">
+        <a class="hov" href="main page.html" data-replace="home"><span>home</span></a>
+        <a class="hov" href="about.html" data-replace="about me"><span>about me</span></a>
+        
+      
+      
+
+
+            <a class="hov" href="#" data-replace="portfolio" onclick="openNav()"><span>portfolio</span></a>
+
+
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="port.html">Illustrations</a>
+                <a href="pack.html">Packaging Designs</a>
+                <a href="poster.html">Posters</a>
+                <a href="logo.html">Logos</a>
+              </div>
+            </div>
+         
+      
+        <a class="hov" href="#" data-replace="contact"><span>contact</span></a>
+      </div>
+    </div></header> <hr>
+<aside>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="sava.jpg" style="width:100%">
+    
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="bal.jpg" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="love.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="take.jpg" style="width:100%">
+        
+      </div>
+
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+   
+    </div>
+    
+</aside>
+
+
+
+
+<script>
+
+  //menu
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+
+
+  //slide
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  </body>
+</html>
