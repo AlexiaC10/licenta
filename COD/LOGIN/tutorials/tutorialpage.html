@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DITTO</title>
+  <link rel="stylesheet" href="../../CSS/maincss.css">
+  <link rel="stylesheet" href="../../CSS/tutorial.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+   
+      <div class="header-right">
+       
+        <a class="hov" href="../main page.html" data-replace="home"><span>home</span></a>
+        
+        <a class="hov" href="#" data-replace="find jobs" onclick="openNav()"><span>find jobs</span></a>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="findjobs/WebDesign.html">Web design</a>
+            <a href="findjobs/GraphicDesign.html">Graphic design</a>
+            <a href="../comingsoon.html">Data entry</a>
+            <a href="../comingsoon.html">Marketing</a>
+          </div>
+        </div>
+
+        <a class="hov" href="#" data-replace="tutorials" onclick="openNav2()" ><span style="color:blue"> web_design</span></a>
+        <div id="myNav2" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+          <div class="overlay-content">
+            <a href="tutorial_web.html">Web Design</a>
+            <a href="../comingsoon.html">Graphic design</a>
+            <a href="../comingsoon.html">Data entry</a>
+            <a href="../comingsoon.html">Marketing</a>
+          </div>
+        </div>
+       
+        <a class="hov" href="http://localhost/COD/LOGIN/index.php" data-replace="login"><span>login</span></a>
+
+       
+        <a class="hov" href="../contact1.html" data-replace="contact"><span>contact</span></a>
+        
+          </div>
+        
+        </div>
+  </header>
+
+  <div class="video-gallery-container">
+    <div class="video-sidebar">
+      <h2>Video Sections</h2>
+      <div class="section-list">
+        <div class="section">
+          <input type="checkbox" id="part1" name="part1">
+          <label for="part1">Part 1: Introduction</label>
+          <p>Learn the basics of responsive course card design.</p>
+        </div>
+        <div class="section">
+          <input type="checkbox" id="part2" name="part2">
+          <label for="part2">Part 2: HTML Structure</label>
+          <p>Explore the HTML structure needed for the course cards.</p>
+        </div>
+        <div class="section">
+          <input type="checkbox" id="part3" name="part3">
+          <label for="part3">Part 3: CSS Styling</label>
+          <p>Apply CSS styles to create visually appealing course cards.</p>
+        </div>
+        <div class="section">
+          <input type="checkbox" id="part4" name="part4">
+          <label for="part4">Part 4: JavaScript Functionality</label>
+          <p>Add interactive features using JavaScript.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-content">
+      <div class="featured-video">
+        <div class="responsive-iframe">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/stqXwwEkF0g?rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h3 class="video-title">
+          Design Responsive Course Cards Using HTML, CSS & JavaScript
+        </h3>
+      </div>
+
+      <div class="video-description">
+        <h2>Tutorial Description</h2>
+        <p>
+          In this engaging tutorial, we delve into creating responsive course cards using HTML, CSS, and JavaScript. Learn to craft flexible layouts and interactive elements, optimized for various devices. The tutorial provides a comprehensive introduction to building sleek and functional interfaces, essential in modern web development.
+        </p>
+      </div>
+
+      <div class="comments-section">
+        <h2>Comments</h2>
+        <form class="comments-form" id="commentForm">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <textarea id="comment" name="comment" rows="4" placeholder="Write your comment here" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="comment-success" id="commentSuccess"></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+  
+    </ul>
+    <p>&copy;2024 Craineanu ALexia | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+  
+   <script>
+    const videoThumbnails = document.querySelectorAll(".video-gallery .all-videos .thumbnail");
+    const videoPlayer = document.querySelector(".video-gallery .featured-video iframe");
+    const videoTitle = document.querySelector(".video-gallery .video-title");
+
+    // Function to load selected video
+    const showVideo = (videoId, title) => {
+      let videoUrl = `https://www.youtube.com/embed/${videoId}?rel=0`;
+      videoPlayer.setAttribute("src", videoUrl);
+      videoTitle.innerHTML = title;
+    };
+
+    // Add event listeners to thumbnails
+    videoThumbnails.forEach((thumbnail) => {
+      thumbnail.addEventListener("click", () => {
+        showVideo(thumbnail.dataset.id, thumbnail.dataset.title);
+      });
+    });
+
+    // Function to handle form submission
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      let name = document.getElementById("name").value;
+      let comment = document.getElementById("comment").value;
+
+      // Simulate form submission (replace with actual submission logic)
+      setTimeout(() => {
+        document.getElementById("commentForm").reset();
+        document.getElementById("commentSuccess").innerText = "Comment submitted successfully!";
+      }, 1000);
+    });
+    function openNav() {
+     document.getElementById("myNav").style.height = "100%";
+   }
+
+   function closeNav() {
+     document.getElementById("myNav").style.height = "0%";
+     window.onscroll = function() {scrollFunction()};
+
+
+
+   } function openNav2() {
+     document.getElementById("myNav2").style.height = "100%";
+   }
+
+   function closeNav2() {
+     document.getElementById("myNav2").style.height = "0%";
+     window.onscroll = function() {scrollFunction()};
+
+
+
+   }
+  </script>
+</body>
+
+</html>

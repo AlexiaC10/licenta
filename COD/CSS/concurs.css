@@ -1,0 +1,119 @@
+.main-content {
+  max-width: 1000px; /* Ajustează la dimensiunea dorită pentru centrat */
+  margin: 0 auto; /* Centrare pe orizontală */
+  padding: 20px; /* Adaugă un padding pentru spațiere */
+}
+
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* sau alte stilizări pentru aliniere, în funcție de nevoi */
+  flex-wrap: wrap; 
+}
+
+.left-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.right-column {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Stilizare pentru sectiunea logo-submission */
+.logo-submission {
+  max-width: 600px; /* Ajustează dimensiunea maximă pentru conținut */
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px;
+  margin: 0 auto;
+}
+
+.logo-submission form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-submission form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.logo-submission form input,
+.logo-submission form textarea {
+  width: calc(100% - 22px); /* 20px padding + 1px border on each side */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.logo-submission form textarea {
+  resize: vertical;
+}
+
+.logo-submission form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logo-submission form button:hover {
+  background-color: #45a049;
+}
+
+#congratsMessage {
+  margin-top: 10px;
+  display: none; /* Va fi afișat doar după trimiterea cu succes a formularului */
+  color: green;
+}
+
+/* Stilizare pentru countdown */
+#daysLeft {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Stilizare pentru titluri și text */
+h2, h3 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Stilizare pentru imaginea carusel */
+.image-slider {
+  /* Acesta este doar un placeholder, stilizarea specifică pentru carusel trebuie adăugată aici */
+  background-color: #ddd;
+  height: 200px; /* Înălțimea imaginii caruselului */
+}
+
+/* Stilizare pentru linkuri */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
